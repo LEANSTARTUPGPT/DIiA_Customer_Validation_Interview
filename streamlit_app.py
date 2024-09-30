@@ -1,16 +1,11 @@
 import streamlit as st
 from openai import OpenAI
-import os
-from dotenv import load_dotenv
 
-# Load environment variables from .env file
-load_dotenv()
-
-# Get the API key from environment variable
-api_key = os.getenv("OPENAI_API_KEY")
+# Embedding the OpenAI API key directly in the code (Replace with your actual API key)
+#OPENAI_API_KEY =
 
 # Create an OpenAI client instance
-client = OpenAI(api_key=api_key)
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 # Streamlit app
 st.title('DIiA - Customer Validation Interview')
